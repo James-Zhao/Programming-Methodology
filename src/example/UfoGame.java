@@ -20,6 +20,8 @@ public class UfoGame extends GraphicsProgram {
 
     /** Animation cycle delay */
     private static final int DELAY = 10;
+
+    @Override
     public void run() {
         setup();
         while (!gameOver()) {
@@ -46,6 +48,7 @@ public class UfoGame extends GraphicsProgram {
 
     /** when mouse is clicked create bullet, unless a bullet * already exists.
      */
+    @Override
     public void mouseClicked(MouseEvent e)
     {
         if (bullet == null) {

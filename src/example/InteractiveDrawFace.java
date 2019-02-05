@@ -11,7 +11,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class InteractiveDrawFace extends GraphicsProgram {
-
+    @Override
     public void init() {
         // Button to clear display
         add(new JButton("Clear"), SOUTH);
@@ -84,11 +84,13 @@ public class InteractiveDrawFace extends GraphicsProgram {
             return Color.GREEN;
         } else if (name.equals("Red")) {
             return Color.RED;
-        } else
+        } else {
             return Color.BLACK;
+        }
     }
 
     // Called every time user clicks mouse
+    @Override
     public void mouseClicked(MouseEvent e) {
         GObject obj;
         double diam = getDiamSize();
@@ -102,6 +104,7 @@ public class InteractiveDrawFace extends GraphicsProgram {
     }
 
         // Called whenever an action event occurs
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals("Clear")) {
             removeAll(); // Clears the canvas

@@ -22,6 +22,7 @@ public class RandomCircles extends GraphicsProgram {
 	/** Maximum radius */
 	private static final double MAX_RADIUS = 50;
 
+	@Override
 	public void run() {
 		for (int i = 0; i < NCIRCLES; i++) {
 			double r = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);

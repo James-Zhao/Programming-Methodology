@@ -11,11 +11,13 @@ public class ClickForFace extends GraphicsProgram {
     private static final double FACE_DIAM = 30;
     // Note: no run() method is this program
     // init() method is called when program starts
+    @Override
     public void init() {
 // Must call this method to be able to get mouse events
         addMouseListeners();
     }
     // This method is called everytime user clicks mouse
+    @Override
     public void mouseClicked(MouseEvent e) {
     GFace face = new GFace(FACE_DIAM, FACE_DIAM);
     add(face, e.getX(), e.getY());

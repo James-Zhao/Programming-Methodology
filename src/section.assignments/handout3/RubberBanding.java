@@ -14,11 +14,13 @@ import java.awt.event.*;
 
 /** This class allows users to drag lines on the canvas */
 public class RubberBanding extends GraphicsProgram {
+	@Override
 	public void run() {
 		addMouseListeners();
 	}
 
 	/** Called on mouse press to create a new line */
+	@Override
 	public void mousePressed(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
@@ -27,6 +29,7 @@ public class RubberBanding extends GraphicsProgram {
 	}
 
 	/** Called on mouse drag to reset the endpoint */
+	@Override
 	public void mouseDragged(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();

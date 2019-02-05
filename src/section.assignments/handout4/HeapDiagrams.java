@@ -3,6 +3,7 @@ package handout4;
 import acm.program.GraphicsProgram;
 
 public class HeapDiagrams extends GraphicsProgram {
+    @Override
     public void run() {
         Rational r = new Rational(1, 2);
         r = raiseToPower(r, 3);

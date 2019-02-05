@@ -7,6 +7,7 @@ package handout4;
 * your understanding of method calls and parameter passing. */
 import acm.program.*;
 public class Mystery extends ConsoleProgram {
+    @Override
     public void run() {
         ghost(13);
     }

@@ -6,7 +6,7 @@
 import acm.program.*;
 
 public class CaesarCipher extends ConsoleProgram {
-
+    @Override
     public void run() {
         println("This program uses a Caesar cipher for encryption.");
         int key = readInt("Enter encryption key: ");

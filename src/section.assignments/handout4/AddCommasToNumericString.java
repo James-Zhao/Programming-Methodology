@@ -9,6 +9,7 @@ import acm.program.ConsoleProgram;
 * like 1000 -> 1,000
 */
 public class AddCommasToNumericString extends ConsoleProgram {
+    @Override
     public void run() {
         while (true) {
             String digits = readLine("Enter a numeric string: ");

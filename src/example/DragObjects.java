@@ -13,6 +13,7 @@ import java.awt.event.*;
 /** This class displays a mouse-draggable rectangle and oval */
 public class DragObjects extends GraphicsProgram {
     // Initializes the program
+    @Override
     public void init() {
         GRect rect = new GRect(100, 100, 150, 100);
         rect.setFilled(true);
@@ -24,17 +25,20 @@ public class DragObjects extends GraphicsProgram {
         addKeyListeners();
     }
 // Called on mouse press to record the coordinates of the click */
+    @Override
     public void mousePressed(MouseEvent e) {
     // GPoint has X and Y coordinate
     last = new GPoint(e.getPoint());
     gobj = getElementAt(last);
 }
     // Called on mouse drag to reposition the object
+    @Override
     public void mouseDragged(MouseEvent e) {
         if (gobj != null) {
             gobj.move(e.getX() - last.getX(), e.getY() - last.getY()); last = new GPoint(e.getPoint());
         } }
     // Change color of last object dragged
+    @Override
     public void keyTyped(KeyEvent e) {
         if (gobj != null) {
             gobj.setColor(rgen.nextColor());

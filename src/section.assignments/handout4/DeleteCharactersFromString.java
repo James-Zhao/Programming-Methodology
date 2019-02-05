@@ -9,13 +9,15 @@ import acm.program.ConsoleProgram;
 */
 
 public class DeleteCharactersFromString extends ConsoleProgram{
+    @Override
     public void run() {
         while (true) {
             String string = readLine("Enter a string: ");
             String character = readLine("Enter a character: ");
             char c;
-            if (string.length() == 0 || character.length() == 0)
+            if (string.length() == 0 || character.length() == 0) {
                 break;
+            }
             if (character.length() > 1) {
                 println("invalid character");
                 break;
