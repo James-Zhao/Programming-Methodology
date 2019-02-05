@@ -1,5 +1,3 @@
-package src.example;
-
 /*
 * File: ColorChangingSquare.java
 * ------------------------------
@@ -16,6 +14,7 @@ public class ColorChangingSquare extends GraphicsProgram {
 	/* Pause time in milliseconds */
 	private static final int PAUSE_TIME = 1000;
 
+	@Override
 	public void run() {
 		GRect square = new GRect(SQUARE_SIZE, SQUARE_SIZE);
 		square.setFilled(true);

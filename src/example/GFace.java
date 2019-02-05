@@ -1,5 +1,3 @@
-package src.example;
-
 import acm.graphics.GCompound;
 import acm.graphics.GOval;
 import acm.graphics.GPolygon;

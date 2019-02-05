@@ -1,5 +1,3 @@
-package src.example;
-
 /*
 * File: RollDice.java
 * -------------------
@@ -14,6 +12,7 @@ public class RollDice extends ConsoleProgram {
 	/* Number of sides on each die */
 	private static final int NUM_SIDES = 6;
 
+	@Override
 	public void run() {
 		int numDice = readInt("Number of dice: ");
 		int maxRoll = numDice * NUM_SIDES;
@@ -21,8 +20,9 @@ public class RollDice extends ConsoleProgram {
 		while (true) {
 			int roll = rollDice(numDice);
 			numRolls++;
-			if (roll == maxRoll)
-				break;
+			if (roll == maxRoll) {
+                break;
+            }
 			println("Rolled " + roll);
 		}
 		println("Rolled " + maxRoll + " after " + numRolls + " rolls");

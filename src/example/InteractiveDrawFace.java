@@ -1,5 +1,3 @@
-package src.example;
-
 /*
 * File: InteractiveDrawFace.java
 * ------------------------------

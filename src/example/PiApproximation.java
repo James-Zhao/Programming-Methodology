@@ -1,5 +1,3 @@
-package src.example;
-
 /*
 * File: PiApproximation.java
 * --------------------------
@@ -15,6 +13,7 @@ public class PiApproximation extends ConsoleProgram {
 	/* Number of darts to throw. */
 	private static final int NDARTS = 10000;
 
+	@Override
 	public void run() {
 		int inside = 0;
 		for (int i = 0; i < NDARTS; i++) {

@@ -1,5 +1,3 @@
-package src.example;
-
 /*
 * File: CaesarCipher.java
 * -----------------------

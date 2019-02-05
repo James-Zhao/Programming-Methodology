@@ -1,5 +1,3 @@
-package src.example;
-
 /* File: TextFieldExample.java
 * ---------------------------
 * This class displays a greeting whenever a name is entered */
